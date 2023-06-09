@@ -51,4 +51,4 @@ impl Solution {
         true
     }
 }
-pub struct Solution {}
+struct Solution {}

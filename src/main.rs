@@ -1,25 +1,16 @@
 mod contains_duplicate;
 mod group_anagrams;
 mod is_anagram;
+mod longest_consecutive;
 mod product_of_array_except_self;
 mod top_k_frequent_elements;
 mod two_sum;
 mod valid_sudoku;
 
 fn main() {
-    let board = vec![
-        vec!['.', '.', '.', '.', '.', '.', '5', '.', '.'],
-        vec!['.', '.', '.', '.', '.', '.', '.', '.', '.'],
-        vec!['.', '.', '.', '.', '.', '.', '.', '.', '.'],
-        vec!['9', '3', '.', '.', '2', '.', '4', '.', '.'],
-        vec!['.', '.', '7', '.', '.', '.', '3', '.', '.'],
-        vec!['.', '.', '.', '.', '.', '.', '.', '.', '.'],
-        vec!['.', '.', '.', '3', '4', '.', '.', '.', '.'],
-        vec!['.', '.', '.', '.', '.', '3', '.', '.', '.'],
-        vec!['.', '.', '.', '.', '.', '5', '2', '.', '.'],
-    ];
+    let nums = vec![1, 2, 0, 1];
 
-    let result = valid_sudoku::Solution::is_valid_sudoku(board);
+    let result = longest_consecutive::Solution::longest_consecutive(nums);
 
-    println!("Sudoku Valid: {}", result);
+    println!("Longest Consecutive: {}", result);
 }
