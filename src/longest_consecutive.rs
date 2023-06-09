@@ -23,4 +23,4 @@ impl Solution {
     }
 }
 
-pub struct Solution {}
+struct Solution {}
